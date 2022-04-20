@@ -57,3 +57,10 @@ pip install -v -e .  # or "python setup.py develop"
 
 ## 训练脚本
 python tools/train.py configs/faster_rcnn/faster_rcnn_r50_fpn_1x_didi.py
+
+## 生成test.json
+cd ..\datasets\didi\dataset_release
+python ..\..\..\mmdetection\tools\dataset_converters\images2testjson.py test val.json
+
+## 预测结果
+python tools/test.py  configs/faster_rcnn/faster_rcnn_r50_fpn_1x_didi.py ./work_dirs/faster_rcnn_r50_fpn_1x_didi/epoch_12.pth --format-only --options "jsonfile_prefix=./test_results"
