@@ -6,6 +6,16 @@
 1. torch, mmcv的版本
 2. torch, mmcv的顺序
 
+## 安装虚拟环境
+建议不使用conda,而是直接使用python的模块venv，在当前目录下创建环境
+1. python -m venv openmmlab3 python=3.7
+2. cd openmmlab3
+3. source bin/activate
+4. 检查
+   1. (openmmlab3) aistudio@jupyter-1060416-3829406:~/openmmlab3$ type python
+   2. (openmmlab3) aistudio@jupyter-1060416-3829406:~/openmmlab3$ python -V
+
+
 ### 查看当前cuda版本
 nvcc -V
 我的版本是11.5
