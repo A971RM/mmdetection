@@ -8,7 +8,7 @@
 
 ## 安装虚拟环境
 建议不使用conda,而是直接使用python的模块venv，在当前目录下创建环境
-1. python -m venv openmmlab3 python=3.7
+1. python -m venv openmmlab3
 2. cd openmmlab3
 3. source bin/activate
 4. 检查
