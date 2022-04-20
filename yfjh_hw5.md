@@ -1,4 +1,4 @@
-# 驭风计划
+# 驭风计划作业5
 
 ## 安装环境
 环境的安装有两个注意点：
@@ -60,6 +60,7 @@ python tools/train.py configs/faster_rcnn/faster_rcnn_r50_fpn_1x_didi.py
 
 ## 生成test.json
 cd ..\datasets\didi\dataset_release
+
 python ..\..\..\mmdetection\tools\dataset_converters\images2testjson.py test val.json
 
 ## 预测结果
