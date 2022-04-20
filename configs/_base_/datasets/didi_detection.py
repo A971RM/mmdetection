@@ -1,5 +1,5 @@
 dataset_type = 'CocoDataset'
-data_root = '/data4/tangchufeng/Data/D2City/dataset_release/'
+data_root = r'E:\\job\\code\\github\\A971RM\\datasets\\didi\\dataset_release\\'
 
 classes = ('car','van','bus','truck','person','bicycle','motorcycle','open-tricycle','closed-tricycle','forklift','large-block','small-block')
 
